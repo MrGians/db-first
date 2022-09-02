@@ -1,0 +1,31 @@
+Modellizzare la struttura di una tabella per memorizzare tutti i dati 
+riguardanti delle auto usate messe in vendita da un concessionario.
+
+
+colonna - tipo_di_dato - attributo/i - eventuale_indice
+
+id: BIGINT - UNIQUE, NOT NULL, AUTO INCREMENT - PRIMARY KEY
+marca: VARCHAR(30) - NOT NULL - INDEX
+modello: VARCHAR (30) - NOT NULL
+serie: VARCHAR (50) - NULL
+anno: YEAR - NOT NULL
+num_posti: TINYINT - DEFAULT: 2 - INDEX
+porte: TINYINT(10) - DEFAULT: 3
+lunghezza: SMALLINT - NULL
+larghezza: SMALLINT - NULL
+altezza: SMALLINT - NULL
+altezza_da_terra: SMALLINT - NULL
+peso_totale: SMALLINT - NULL
+tipo_motore: VARCHAR(30) - NOT NULL - INDEX
+potenza_motore: SMALLINT - NULL
+consumo: FLOAT(3,1) - NOT NULL
+velocita_max: SMALLINT - NULL
+cilindrata: SMALLINT - NOT NULL
+tipo_cambio: VARCHAR(10) - DEFAULT: "manuale" - INDEX
+airbag: TINYINY(1) - DEFAULT: 1
+radio: TINYINY(1) - DEFAULT: 0
+km_percorsi: INT - NOT NULL
+condizioni: CHAR(1) - DEFAULT: A - INDEX
+revisionata: TINYINY(1) - DEFAULT: 1
+disponibile: TINYINY(1) - DEFAULT: 1
+prezzo_vendita: MEDIUMINT - NOT NULL - INDEX
