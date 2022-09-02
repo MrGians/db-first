@@ -28,4 +28,5 @@ km_percorsi: INT - NOT NULL
 condizioni: CHAR(1) - DEFAULT: A - INDEX
 revisionata: TINYINY(1) - DEFAULT: 1
 disponibile: TINYINY(1) - DEFAULT: 1
+foto: VARCHAR - NULL
 prezzo_vendita: MEDIUMINT - NOT NULL - INDEX
